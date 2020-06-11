@@ -73,13 +73,28 @@ plt.title(f'{most_freq}, Y = {int(round(m))}X + {int(round(b))}', fontproperties
 
 # plt.show()
 
-mid = num_rows // 2
-train_data = mid_prices[:num_rows]
-test_data = mid_prices[num_rows:]
+# Create x, where x the 'scores' column's values as floats
+x = df[['price']].values.astype(float)
+# Create a minimum and maximum processor object
+min_max_scaler = MinMaxScaler()
+# Create an object to transform the data to fit minmax processor
+x_scaled = min_max_scaler.fit_transform(x)
+# Run the normalizer on the dataframe
+df_norm = pd.DataFrame(x_scaled)
+df_norm.columns = ['price_norm']
+df_most['price_norm'] = df_norm['price_norm']
 
-# Scale the data to be between 0 and 1
-# You normalize both test and train data with respect to training data
-# Because you are not supposed to have access to test data
-scaler = MinMaxScaler()
-train_data = train_data.reshape(-1,1)
-test_data = test_data.reshape(-1,1)
+mid = num_rows // 2
+#train_data = df_most.iloc[:mid, :].to_numpy()
+#test_data = df_most.iloc[mid:, :].to_numpy()
+train_data = df_most.iloc[:mid, :]['price_norm'].to_numpy()
+test_data = df_most.iloc[mid:, :]['price_norm'].to_numpy()
+
+# Now perform exponential moving average smoothing
+# So the data will have a smoother curve than the original ragged data
+#EMA = 0.0
+#gamma = 0.1
+#for ti in range((num_rows-1)):
+#    print(f'index: {ti}')
+#    EMA = gamma*train_data[ti] + (1-gamma)*EMA
+#    train_data[ti] = EMA
