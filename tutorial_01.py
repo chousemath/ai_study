@@ -42,9 +42,12 @@ df['name_cleaned'] = df.apply(lambda x: x['name'].strip(), axis=1)
 df = df.replace('None', np.nan)
 df = df.replace('', np.nan)
 df = df.dropna()
+
 most_freq = df['name'].mode().to_numpy()[0]
+
 df_most = df[df.name_cleaned.eq(most_freq)]
 df_most.sort_values(by=['year'])
+num_rows = len(df_most.index)
 
 years = list(set(df_most['year'].tolist()))
 years.sort()
@@ -68,4 +71,15 @@ plt.xlabel('년식', fontsize=font_size, fontproperties=fontprop)
 plt.ylabel('판매가', fontsize=font_size, fontproperties=fontprop)
 plt.title(f'{most_freq}, Y = {int(round(m))}X + {int(round(b))}', fontproperties=fontprop)
 
-plt.show()
+# plt.show()
+
+mid = num_rows // 2
+train_data = mid_prices[:num_rows]
+test_data = mid_prices[num_rows:]
+
+# Scale the data to be between 0 and 1
+# You normalize both test and train data with respect to training data
+# Because you are not supposed to have access to test data
+scaler = MinMaxScaler()
+train_data = train_data.reshape(-1,1)
+test_data = test_data.reshape(-1,1)
