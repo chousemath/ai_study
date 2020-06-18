@@ -44,14 +44,13 @@ df = df[df['price'] != 0]
 df = df.drop_duplicates(subset=['price', 'name_year', 'plate_num'])
 df = df.drop([
     'transmission',
-    'fuel',
     'options',
     'name',
     'year',
     'regist_year',
     'timestamp',
 ], axis=1)
-df = df[['date', 'name_year', 'plate_num', 'price', 'mileage', 'color', 'no_accident', 'yes_warranty']]
+df = df[['date', 'name_year', 'plate_num', 'price', 'mileage', 'color', 'no_accident', 'yes_warranty', 'fuel']]
 df = df.sort_values(by=['date'])
 df.to_csv(os.path.join('phoenix', f'phoenix.csv'), index=False)
 df.to_excel(os.path.join('phoenix', 'phoenix.xlsx'))
