@@ -1,1 +1,5 @@
 carmanager.csv
+encar_domestic.csv
+encar_foreign.csv
+*.zip
+*.csv
