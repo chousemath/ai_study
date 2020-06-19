@@ -62,5 +62,13 @@ df = df[['date', 'name', 'price', 'year', 'regist_year', 'mileage', 'transmissio
 df = df.sort_values(by=['date'])
 headers = ['날짜', '모델명', '차량가격', '형식년도', '최초등록일', '마일리지', '변속', '연료', '자동차 번호', '색상', '무사고', '워런티']
 df.columns = [norm(x) for x in headers]
-df.to_csv(os.path.join('phoenix', f'phoenix.csv'), index=False)
-df.to_excel(os.path.join('phoenix', 'phoenix.xlsx'))
+
+num_rows = len(df.index)
+
+count = 0
+for x in range(10_000, num_rows, 10_000):
+    df1 = df.head(x).tail(10_000)
+    ext = f'_{count * 10_000}-{min((count + 1) * 10_000, num_rows)}'
+    df1.to_csv(os.path.join('phoenix', f'phoenix{ext}.csv'), index=False)
+    df1.to_excel(os.path.join('phoenix', f'phoenix{ext}.xlsx'))
+    count += 1
