@@ -1,56 +1,52 @@
 {
     "Attributes": [
         {
-            "AttributeName": "date",
+            "AttributeName": "timestamp",
             "AttributeType": "timestamp"
         },
         {
-            "AttributeName": "price",
+            "AttributeName": "target_value",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "name",
+            "AttributeName": "item_id",
             "AttributeType": "string"
         },
         {
-            "AttributeName": "year",
-            "AttributeType": "integer"
-        },
-        {
             "AttributeName": "mileage",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "color",
             "AttributeType": "string"
         },
         {
             "AttributeName": "noaccident",
-            "AttributeType": "integer"
+            "AttributeType": "string"
         },
         {
-            "AttributeName": "opt32",
-            "AttributeType": "integer"
+            "AttributeName": "opt0",
+            "AttributeType": "string"
         },
         {
-            "AttributeName": "opt59",
-            "AttributeType": "integer"
+            "AttributeName": "opt1",
+            "AttributeType": "string"
         },
         {
-            "AttributeName": "opt46",
-            "AttributeType": "integer"
+            "AttributeName": "opt2",
+            "AttributeType": "string"
         },
         {
-            "AttributeName": "opt15",
-            "AttributeType": "integer"
+            "AttributeName": "opt3",
+            "AttributeType": "string"
+        },
+        {
+            "AttributeName": "opt4",
+            "AttributeType": "string"
         },
         {
             "AttributeName": "opt5",
-            "AttributeType": "integer"
+            "AttributeType": "string"
         },
         {
-            "AttributeName": "opt29",
-            "AttributeType": "integer"
+            "AttributeName": "opt6",
+            "AttributeType": "string"
         }
     ]
 }

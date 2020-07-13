@@ -52,9 +52,20 @@ df = df[df['target_value'] != 0]
 
 opt_count = 0
 option_alias = {}
-for option in options:
+selected_options = [
+    "파노라마썬루프",
+    "스마트키",
+    "네비게이션",
+    #"썬루프",
+    "후방카메라",
+    "썬팅",
+    "GPS",
+    "블랙박스",
+]
+#for option in options:
+for option in selected_options:
     print(f'option: {option}')
-    df[option] = df.apply(lambda x: 1 if isinstance(x.get('options'), str) and option in x['options'] else 0, axis=1)
+    df[option] = df.apply(lambda x: '1' if isinstance(x.get('options'), str) and option in x['options'] else '0', axis=1)
     option_alias[option] = f'opt{opt_count}'
     opt_count += 1
 
@@ -62,17 +73,9 @@ for option in options:
 options = list(options)
 df = df.drop_duplicates()
 
-selected_options = [
-    "파노라마썬루프",
-    "스마트키",
-    "네비게이션",
-    "썬루프",
-    "후방카메라",
-    "썬팅",
-    "GPS",
-    "블랙박스",
-]
 df = df[['timestamp', 'target_value', 'item_id', 'mileage', 'noaccident'] + selected_options]
+df['mileage'] = df.apply(lambda x: str(x.get('mileage')), axis=1)
+df['noaccident'] = df.apply(lambda x: str(x.get('noaccident')), axis=1)
 df = df.dropna()
 df = df.sort_values(by=['timestamp'])
 
