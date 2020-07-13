@@ -49,9 +49,14 @@ df['name_year_color'] = df.apply(lambda x: gen_nm_yr_color(x), axis=1)
 df['price'] = df.apply(lambda x: adjust_price(x), axis=1)
 df = df[~df['name_year_color'].str.contains('xxx')]
 df = df[df['price'] != 0]
+
+opt_count = 0
+option_alias = {}
 for option in options:
     print(f'option: {option}')
     df[option] = df.apply(lambda x: 1 if isinstance(x.get('options'), str) and option in x['options'] else 0, axis=1)
+    option_alias[option] = f'opt{opt_count}'
+    opt_count += 1
 
 
 options = list(options)
@@ -64,12 +69,22 @@ df.to_csv('carmanager_forecast.csv', index=False, header=False)
 headers = list(df.columns.values)
 attributes = []
 for h in headers:
+    t = str(df[h].dtype)
+    if h == 'date':
+        t = 'timestamp'
+    elif t == 'object':
+        t = 'string'
+    elif t == 'int64':
+        t = 'integer'
+
     attributes.append({
-        "AttributeName": h,
-        "AttributeType": str(df[h].dtype),
+        "AttributeName": option_alias[h] if h in option_alias else h,
+        "AttributeType": t,
     })
 
 with io.open('carmanager_forecast.json', 'w', encoding='utf-8') as f:
     f.write(json.dumps({'Attributes': attributes}, ensure_ascii=False, indent=4))
 
+with io.open('option_alias.json', 'w', encoding='utf-8') as f:
+    f.write(json.dumps(option_alias, ensure_ascii=False, indent=4))
 

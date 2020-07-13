@@ -33,259 +33,259 @@
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "sunroof",
+            "AttributeName": "option-0",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "tripcomputer",
+            "AttributeName": "option-1",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "curtainairbag",
+            "AttributeName": "option-2",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "dmb",
+            "AttributeName": "option-3",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "dvdplayer",
+            "AttributeName": "option-4",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "bucketseat",
+            "AttributeName": "option-5",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "smartkey",
+            "AttributeName": "option-6",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "abs",
+            "AttributeName": "option-7",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "vcdplayer",
+            "AttributeName": "option-8",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "hidlamp",
+            "AttributeName": "option-9",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "handleremocon",
+            "AttributeName": "option-10",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "4myu",
+            "AttributeName": "option-11",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "powerwindow",
+            "AttributeName": "option-12",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "memoryseat",
+            "AttributeName": "option-13",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "heatseat",
+            "AttributeName": "option-14",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "sunting",
+            "AttributeName": "option-15",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "av",
+            "AttributeName": "option-16",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "woodgrain",
+            "AttributeName": "option-17",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "fullautoaircon",
+            "AttributeName": "option-18",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "roofcarrier",
+            "AttributeName": "option-19",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "electricbackmirror",
+            "AttributeName": "option-20",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "cdchanger",
+            "AttributeName": "option-21",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "파노라마썬루프",
+            "AttributeName": "option-22",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "튜닝스피커",
+            "AttributeName": "option-23",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "원격시동장치",
+            "AttributeName": "option-24",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "ECM룸미러",
+            "AttributeName": "option-25",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "ESP",
+            "AttributeName": "option-26",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "크루즈컨트롤",
+            "AttributeName": "option-27",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "뒷좌석TV",
+            "AttributeName": "option-28",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "MP3플레이어",
+            "AttributeName": "option-29",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "공기청정기",
+            "AttributeName": "option-30",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "범퍼가드",
+            "AttributeName": "option-31",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "오토도어록",
+            "AttributeName": "option-32",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "전동시트",
+            "AttributeName": "option-33",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "네비게이션",
+            "AttributeName": "option-34",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "도난경보기",
+            "AttributeName": "option-35",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "리어스포일러",
+            "AttributeName": "option-36",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "ECS",
+            "AttributeName": "option-37",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "TCS",
+            "AttributeName": "option-38",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "슈퍼비젼계기판",
+            "AttributeName": "option-39",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "알루미늄휠",
+            "AttributeName": "option-40",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "메탈그레인",
+            "AttributeName": "option-41",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "전동접이식백미러",
+            "AttributeName": "option-42",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "앰프",
+            "AttributeName": "option-43",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "냉장고",
+            "AttributeName": "option-44",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "에어컨",
+            "AttributeName": "option-45",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "블랙박스",
+            "AttributeName": "option-46",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "하이패스",
+            "AttributeName": "option-47",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "GPS",
+            "AttributeName": "option-48",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "파워핸들",
+            "AttributeName": "option-49",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "우퍼",
+            "AttributeName": "option-50",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "스트럿바",
+            "AttributeName": "option-51",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "앞좌석TV",
+            "AttributeName": "option-52",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "에어댐",
+            "AttributeName": "option-53",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "CD플레이어",
+            "AttributeName": "option-54",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "가죽시트",
+            "AttributeName": "option-55",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "제논램프",
+            "AttributeName": "option-56",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "조수석에어백",
+            "AttributeName": "option-57",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "크롬휠",
+            "AttributeName": "option-58",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "운전석에어백",
+            "AttributeName": "option-59",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "사이드에어백",
+            "AttributeName": "option-60",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "전후방감지기",
+            "AttributeName": "option-61",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "후방카메라",
+            "AttributeName": "option-62",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "광폭타이어",
+            "AttributeName": "option-63",
             "AttributeType": "integer"
         }
     ]
