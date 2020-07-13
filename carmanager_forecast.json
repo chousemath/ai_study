@@ -33,91 +33,91 @@
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "썬루프",
+            "AttributeName": "sunroof",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "트립컴퓨터",
+            "AttributeName": "tripcomputer",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "커튼에어백",
+            "AttributeName": "curtainairbag",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "DMB",
+            "AttributeName": "dmb",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "DVD플레이어",
+            "AttributeName": "dvdplayer",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "버켓시트",
+            "AttributeName": "bucketseat",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "스마트키",
+            "AttributeName": "smartkey",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "ABS",
+            "AttributeName": "abs",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "VCD플레이어",
+            "AttributeName": "vcdplayer",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "HID램프",
+            "AttributeName": "hidlamp",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "핸들리모컨",
+            "AttributeName": "handleremocon",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "4륜구동",
+            "AttributeName": "4myu",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "파워윈도우",
+            "AttributeName": "powerwindow",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "메모리시트",
+            "AttributeName": "memoryseat",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "열선시트",
+            "AttributeName": "heatseat",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "썬팅",
+            "AttributeName": "sunting",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "AV시스템",
+            "AttributeName": "av",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "우드그레인",
+            "AttributeName": "woodgrain",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "풀오토에어컨",
+            "AttributeName": "fullautoaircon",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "루프캐리어",
+            "AttributeName": "roofcarrier",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "전동백미러",
+            "AttributeName": "electricbackmirror",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "CD체인저",
+            "AttributeName": "cdchanger",
             "AttributeType": "integer"
         },
         {
