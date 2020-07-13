@@ -25,267 +25,31 @@
             "AttributeType": "string"
         },
         {
-            "AttributeName": "no_accident",
+            "AttributeName": "noaccident",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "yes_warranty",
+            "AttributeName": "opt32",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "option-0",
+            "AttributeName": "opt59",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "option-1",
+            "AttributeName": "opt46",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "option-2",
+            "AttributeName": "opt15",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "option-3",
+            "AttributeName": "opt5",
             "AttributeType": "integer"
         },
         {
-            "AttributeName": "option-4",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-5",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-6",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-7",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-8",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-9",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-10",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-11",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-12",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-13",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-14",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-15",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-16",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-17",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-18",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-19",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-20",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-21",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-22",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-23",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-24",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-25",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-26",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-27",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-28",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-29",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-30",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-31",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-32",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-33",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-34",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-35",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-36",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-37",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-38",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-39",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-40",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-41",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-42",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-43",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-44",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-45",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-46",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-47",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-48",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-49",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-50",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-51",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-52",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-53",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-54",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-55",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-56",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-57",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-58",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-59",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-60",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-61",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-62",
-            "AttributeType": "integer"
-        },
-        {
-            "AttributeName": "option-63",
+            "AttributeName": "opt29",
             "AttributeType": "integer"
         }
     ]

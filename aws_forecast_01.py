@@ -14,7 +14,7 @@ def norm(input: str) -> str:
 names = [
     'timestamp',
     'name',
-    'price',
+    'target_value', # price
     'year',
     'regist_year',
     'mileage',
@@ -22,8 +22,8 @@ names = [
     'fuel',
     'plate_num',
     'color',
-    'no_accident',
-    'yes_warranty',
+    'noaccident',
+    'yeswarranty',
     'options'
 ]
 df = pd.read_csv('carmanager.csv', sep=',', names=names)
@@ -41,14 +41,14 @@ def gen_nm_yr_color(row) -> str:
     return norm(f'{nm or "xxx"} {yr or "xxx"} {color or "xxx"}')
 
 def adjust_price(row) -> int:
-    return int(row.get('price', 0))
+    return int(row.get('target_value', 0))
 
 # truncate off the scraping date to the day
-df['date'] = df.apply(lambda x: dt.utcfromtimestamp(x.get('timestamp')).strftime('%Y-%m-%d 00:00:00'), axis=1)
-df['name_year_color'] = df.apply(lambda x: gen_nm_yr_color(x), axis=1)
-df['price'] = df.apply(lambda x: adjust_price(x), axis=1)
-df = df[~df['name_year_color'].str.contains('xxx')]
-df = df[df['price'] != 0]
+df['timestamp'] = df.apply(lambda x: dt.utcfromtimestamp(x.get('timestamp')).strftime('%Y-%m-%d 00:00:00'), axis=1)
+df['item_id'] = df.apply(lambda x: gen_nm_yr_color(x), axis=1)
+df['target_value'] = df.apply(lambda x: adjust_price(x), axis=1)
+df = df[~df['item_id'].str.contains('xxx')]
+df = df[df['target_value'] != 0]
 
 opt_count = 0
 option_alias = {}
@@ -61,16 +61,27 @@ for option in options:
 
 options = list(options)
 df = df.drop_duplicates()
-df = df[['date', 'price', 'name', 'year', 'mileage', 'color', 'no_accident', 'yes_warranty'] + options]
+
+selected_options = [
+    "파노라마썬루프",
+    "스마트키",
+    "네비게이션",
+    "썬루프",
+    "후방카메라",
+    "썬팅",
+    "GPS",
+    "블랙박스",
+]
+df = df[['timestamp', 'target_value', 'item_id', 'mileage', 'noaccident'] + selected_options]
 df = df.dropna()
-df = df.sort_values(by=['date'])
+df = df.sort_values(by=['timestamp'])
 
 df.to_csv('carmanager_forecast.csv', index=False, header=False)
 headers = list(df.columns.values)
 attributes = []
 for h in headers:
     t = str(df[h].dtype)
-    if h == 'date':
+    if h == 'timestamp':
         t = 'timestamp'
     elif t == 'object':
         t = 'string'
