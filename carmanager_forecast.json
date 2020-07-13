@@ -1,0 +1,296 @@
+{
+    "Attributes": [
+        {
+            "AttributeName": "date",
+            "AttributeType": "object"
+        },
+        {
+            "AttributeName": "price",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "name",
+            "AttributeType": "object"
+        },
+        {
+            "AttributeName": "year",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "mileage",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "transmission",
+            "AttributeType": "object"
+        },
+        {
+            "AttributeName": "color",
+            "AttributeType": "object"
+        },
+        {
+            "AttributeName": "no_accident",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "yes_warranty",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "블랙박스",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "앞좌석TV",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "냉장고",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "에어컨",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "ECS",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "전동접이식백미러",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "슈퍼비젼계기판",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "열선시트",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "후방카메라",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "핸들리모컨",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "VCD플레이어",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "가죽시트",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "CD플레이어",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "전동백미러",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "MP3플레이어",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "뒷좌석TV",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "파워핸들",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "원격시동장치",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "DVD플레이어",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "전후방감지기",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "앰프",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "메탈그레인",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "파워윈도우",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "썬팅",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "스마트키",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "네비게이션",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "썬루프",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "AV시스템",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "조수석에어백",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "ABS",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "전동시트",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "DMB",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "CD체인저",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "범퍼가드",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "풀오토에어컨",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "버켓시트",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "제논램프",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "리어스포일러",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "알루미늄휠",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "오토도어록",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "커튼에어백",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "ESP",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "HID램프",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "루프캐리어",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "스트럿바",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "TCS",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "광폭타이어",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "하이패스",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "도난경보기",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "트립컴퓨터",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "ECM룸미러",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "에어댐",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "크롬휠",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "우퍼",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "운전석에어백",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "GPS",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "우드그레인",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "파노라마썬루프",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "공기청정기",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "사이드에어백",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "튜닝스피커",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "4륜구동",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "메모리시트",
+            "AttributeType": "int64"
+        },
+        {
+            "AttributeName": "크루즈컨트롤",
+            "AttributeType": "int64"
+        }
+    ]
+}
