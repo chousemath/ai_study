@@ -14,7 +14,7 @@
         },
         {
             "AttributeName": "modelyear",
-            "AttributeType": "integer"
+            "AttributeType": "string"
         },
         {
             "AttributeName": "color",

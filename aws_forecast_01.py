@@ -74,6 +74,7 @@ options = list(options)
 df = df.drop_duplicates()
 
 df = df[['timestamp', 'target_value', 'item_id', 'modelyear', 'color', 'mileage', 'noaccident'] + selected_options]
+df['modelyear'] = df.apply(lambda x: str(x.get('modelyear')), axis=1)
 df['mileage'] = df.apply(lambda x: str(x.get('mileage')), axis=1)
 df['noaccident'] = df.apply(lambda x: str(x.get('noaccident')), axis=1)
 df = df.dropna()
