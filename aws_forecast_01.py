@@ -13,9 +13,9 @@ def norm(input: str) -> str:
 
 names = [
     'timestamp',
-    'name',
+    'item_id',
     'target_value', # price
-    'year',
+    'modelyear',
     'regist_year',
     'mileage',
     'transmission',
@@ -35,8 +35,8 @@ for opt in (x for x in df['options'] if isinstance(x, str)):
 
 
 def gen_nm_yr_color(row) -> str:
-    nm = row.get('name', 'xxx').strip()
-    yr = str(row.get('year', 'xxx')).strip()
+    nm = row.get('item_id', 'xxx').strip()
+    yr = str(row.get('modelyear', 'xxx')).strip()
     color = str(row.get('color', 'xxx')).strip()
     return norm(f'{nm or "xxx"} {yr or "xxx"} {color or "xxx"}')
 
@@ -45,21 +45,21 @@ def adjust_price(row) -> int:
 
 # truncate off the scraping date to the day
 df['timestamp'] = df.apply(lambda x: dt.utcfromtimestamp(x.get('timestamp')).strftime('%Y-%m-%d 00:00:00'), axis=1)
-df['item_id'] = df.apply(lambda x: gen_nm_yr_color(x), axis=1)
+df['name_year_color'] = df.apply(lambda x: gen_nm_yr_color(x), axis=1)
 df['target_value'] = df.apply(lambda x: adjust_price(x), axis=1)
-df = df[~df['item_id'].str.contains('xxx')]
+df = df[~df['name_year_color'].str.contains('xxx')]
 df = df[df['target_value'] != 0]
 
 opt_count = 0
 option_alias = {}
 selected_options = [
-    "파노라마썬루프",
+    #"파노라마썬루프",
     "스마트키",
     "네비게이션",
     #"썬루프",
     "후방카메라",
     "썬팅",
-    "GPS",
+    #"GPS",
     "블랙박스",
 ]
 #for option in options:
@@ -73,7 +73,7 @@ for option in selected_options:
 options = list(options)
 df = df.drop_duplicates()
 
-df = df[['timestamp', 'target_value', 'item_id', 'mileage', 'noaccident'] + selected_options]
+df = df[['timestamp', 'target_value', 'item_id', 'modelyear', 'color', 'mileage', 'noaccident'] + selected_options]
 df['mileage'] = df.apply(lambda x: str(x.get('mileage')), axis=1)
 df['noaccident'] = df.apply(lambda x: str(x.get('noaccident')), axis=1)
 df = df.dropna()
