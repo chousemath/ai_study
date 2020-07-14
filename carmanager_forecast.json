@@ -13,6 +13,14 @@
             "AttributeType": "string"
         },
         {
+            "AttributeName": "modelyear",
+            "AttributeType": "integer"
+        },
+        {
+            "AttributeName": "color",
+            "AttributeType": "string"
+        },
+        {
             "AttributeName": "mileage",
             "AttributeType": "string"
         },
@@ -38,14 +46,6 @@
         },
         {
             "AttributeName": "opt4",
-            "AttributeType": "string"
-        },
-        {
-            "AttributeName": "opt5",
-            "AttributeType": "string"
-        },
-        {
-            "AttributeName": "opt6",
             "AttributeType": "string"
         }
     ]
